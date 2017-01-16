@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		1FDEFC9F1D51A94D000079DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDEFC9E1D51A94D000079DB /* AppDelegate.swift */; };
-		1FDEFCA11D51A94D000079DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDEFCA01D51A94D000079DB /* ViewController.swift */; };
 		1FDEFCA41D51A94D000079DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FDEFCA21D51A94D000079DB /* Main.storyboard */; };
 		1FDEFCA61D51A94D000079DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FDEFCA51D51A94D000079DB /* Assets.xcassets */; };
 		1FDEFCA91D51A94D000079DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FDEFCA71D51A94D000079DB /* LaunchScreen.storyboard */; };
+		1FDEFCB51D51BA39000079DB /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDEFCB41D51BA39000079DB /* ProductViewController.swift */; };
+		1FDEFCB71D57194E000079DB /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDEFCB61D57194E000079DB /* ContactViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1FDEFC9B1D51A94D000079DB /* WeDeliver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeDeliver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FDEFC9E1D51A94D000079DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1FDEFCA01D51A94D000079DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1FDEFCA31D51A94D000079DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1FDEFCA51D51A94D000079DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FDEFCA81D51A94D000079DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FDEFCAA1D51A94D000079DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FDEFCB41D51BA39000079DB /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		1FDEFCB61D57194E000079DB /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				1FDEFC9E1D51A94D000079DB /* AppDelegate.swift */,
-				1FDEFCA01D51A94D000079DB /* ViewController.swift */,
 				1FDEFCA21D51A94D000079DB /* Main.storyboard */,
+				1FDEFCB61D57194E000079DB /* ContactViewController.swift */,
 				1FDEFCA51D51A94D000079DB /* Assets.xcassets */,
 				1FDEFCA71D51A94D000079DB /* LaunchScreen.storyboard */,
 				1FDEFCAA1D51A94D000079DB /* Info.plist */,
+				1FDEFCB41D51BA39000079DB /* ProductViewController.swift */,
 			);
 			path = WeDeliver;
 			sourceTree = "<group>";
@@ -96,6 +99,8 @@
 				TargetAttributes = {
 					1FDEFC9A1D51A94D000079DB = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = SL75R436T4;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
@@ -135,8 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FDEFCA11D51A94D000079DB /* ViewController.swift in Sources */,
+				1FDEFCB51D51BA39000079DB /* ProductViewController.swift in Sources */,
 				1FDEFC9F1D51A94D000079DB /* AppDelegate.swift in Sources */,
+				1FDEFCB71D57194E000079DB /* ContactViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,10 +255,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WeDeliver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.marcuseagan.WeDeliver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -260,10 +270,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WeDeliver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.marcuseagan.WeDeliver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -286,6 +300,7 @@
 				1FDEFCAF1D51A94D000079DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
