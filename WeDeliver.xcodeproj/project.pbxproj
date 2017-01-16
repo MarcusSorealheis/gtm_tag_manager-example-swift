@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F5205E51E2CD1540085B698 /* ProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5205E41E2CD1540085B698 /* ProductsTableViewController.swift */; };
+		1F5205E81E2D64F10085B698 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5205E61E2D64F10085B698 /* Main.storyboard */; };
 		1FDEFC9F1D51A94D000079DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDEFC9E1D51A94D000079DB /* AppDelegate.swift */; };
-		1FDEFCA41D51A94D000079DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FDEFCA21D51A94D000079DB /* Main.storyboard */; };
 		1FDEFCA61D51A94D000079DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FDEFCA51D51A94D000079DB /* Assets.xcassets */; };
 		1FDEFCA91D51A94D000079DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FDEFCA71D51A94D000079DB /* LaunchScreen.storyboard */; };
 		1FDEFCB51D51BA39000079DB /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDEFCB41D51BA39000079DB /* ProductViewController.swift */; };
@@ -16,9 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F5205E41E2CD1540085B698 /* ProductsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductsTableViewController.swift; path = WeDeliver/ProductsTableViewController.swift; sourceTree = "<group>"; };
+		1F5205E71E2D64F10085B698 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1FDEFC9B1D51A94D000079DB /* WeDeliver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeDeliver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FDEFC9E1D51A94D000079DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1FDEFCA31D51A94D000079DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1FDEFCA51D51A94D000079DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FDEFCA81D51A94D000079DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FDEFCAA1D51A94D000079DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,6 +42,7 @@
 		1FDEFC921D51A94D000079DB = {
 			isa = PBXGroup;
 			children = (
+				1F5205E41E2CD1540085B698 /* ProductsTableViewController.swift */,
 				1FDEFC9D1D51A94D000079DB /* WeDeliver */,
 				1FDEFC9C1D51A94D000079DB /* Products */,
 			);
@@ -57,10 +60,10 @@
 			isa = PBXGroup;
 			children = (
 				1FDEFC9E1D51A94D000079DB /* AppDelegate.swift */,
-				1FDEFCA21D51A94D000079DB /* Main.storyboard */,
 				1FDEFCB61D57194E000079DB /* ContactViewController.swift */,
 				1FDEFCA51D51A94D000079DB /* Assets.xcassets */,
 				1FDEFCA71D51A94D000079DB /* LaunchScreen.storyboard */,
+				1F5205E61E2D64F10085B698 /* Main.storyboard */,
 				1FDEFCAA1D51A94D000079DB /* Info.plist */,
 				1FDEFCB41D51BA39000079DB /* ProductViewController.swift */,
 			);
@@ -94,7 +97,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Marcus Eagan";
 				TargetAttributes = {
 					1FDEFC9A1D51A94D000079DB = {
@@ -127,9 +130,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F5205E81E2D64F10085B698 /* Main.storyboard in Resources */,
 				1FDEFCA91D51A94D000079DB /* LaunchScreen.storyboard in Resources */,
 				1FDEFCA61D51A94D000079DB /* Assets.xcassets in Resources */,
-				1FDEFCA41D51A94D000079DB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FDEFCB51D51BA39000079DB /* ProductViewController.swift in Sources */,
+				1F5205E51E2CD1540085B698 /* ProductsTableViewController.swift in Sources */,
 				1FDEFC9F1D51A94D000079DB /* AppDelegate.swift in Sources */,
 				1FDEFCB71D57194E000079DB /* ContactViewController.swift in Sources */,
 			);
@@ -149,10 +153,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1FDEFCA21D51A94D000079DB /* Main.storyboard */ = {
+		1F5205E61E2D64F10085B698 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1FDEFCA31D51A94D000079DB /* Base */,
+				1F5205E71E2D64F10085B698 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -182,8 +186,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -227,8 +233,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -247,6 +255,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
