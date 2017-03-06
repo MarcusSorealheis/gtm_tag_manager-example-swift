@@ -16,21 +16,17 @@ class ProductViewController: UIViewController {
     
     var product: Product?
     
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        func viewDidLoad() {
-            super.viewDidLoad()
-            
-            if let p = product {
-                productNameLabel.text = p.name
-                if let i = p.productImage {
-                    productImageView.image = UIImage(named: i)
-                }
+        if let p = product {
+            productNameLabel.text = p.name
+            if let i = p.productImage {
+                productImageView.image = UIImage(named: i)
             }
-            
-            
         }
+        
+        
     }
 }

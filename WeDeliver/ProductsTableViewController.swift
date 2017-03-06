@@ -1,5 +1,5 @@
 //
-//  ProductViewController.swift
+//  ProductsTableViewController.swift
 //  WeDeliver
 //
 //  Created by Marcus Eagan on 8/3/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProductTableViewController: UITableViewController {
+class ProductsTableViewController: UITableViewController {
     
     var products: [Product]?
     
@@ -78,6 +78,7 @@ class ProductTableViewController: UITableViewController {
             productVC?.product = products?[indexPath.row]
         }
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
