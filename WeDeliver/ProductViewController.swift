@@ -1,35 +1,36 @@
+
 //
-//  ProductViewController.swift
+//  ProductsTableViewController.swift
 //  WeDeliver
 //
-//  Created by Marcus Eagan on 8/3/16.
-//  Copyright © 2016 Marcus Eagan. All rights reserved.
+//  Created by Marcus Eagan on 1/16/17.
+//  Copyright © 2017 Marcus Eagan. All rights reserved.
 //
 
 import UIKit
 
-class ProductViewController: UIViewController {
-
-    var productName: String?
+class ProductsTableViewController: UITableViewController {
+    
     @IBOutlet weak var productNameLabel: UILabel!
     @IBOutlet weak var productImageView: UIImageView!
+    
+    var product: Product?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        productNameLabel.text = productName
-        productImageView.image = UIImage(named: "phone-fullscreen3")
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-
-
-    @IBAction func addToCartPressed(_ sender: AnyObject) -> Void {
-        print("button tapped!")
-    }
+        
+        
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            
+            if let p = product {
+                productNameLabel.text = p.Name
+                if let i = p.productImage {
+                    productImageView.image = UIImage(named: i)
+                }
+            }
+            
+            
+        }
 }
+
