@@ -8,10 +8,10 @@
 
 import UIKit
 
-class ProductViewController: UIViewController {
+class ProductTableViewController: UITableViewController {
     
     var products: [Product]?
-    ß
+    
     @IBOutlet weak var productNameLabel: UILabel!
     @IBOutlet weak var productImageView: UIImageView!
     override func viewDidLoad() {
@@ -23,26 +23,23 @@ class ProductViewController: UIViewController {
         let product4 = Product()
         
         product1.name = "1907 Wall Set";
-        product1.productImage = "#imageLiteral(resourceName: "phone-fullscreen1")"
+        product1.productImage = "phone-fullscreen1"
         product1.cellImage = "image-cell1"
         
-        product1.name = "1921 Dial Phone"
-        product1.productImage = "#imageLiteral(resourceName: "phone-fullscreen2")"
-        product1.cellImage = "image-cell2"
+        product2.name = "1921 Dial Phone"
+        product2.productImage = "phone-fullscreen2"
+        product2.cellImage = "image-cell2"
         
-        product1.name = "1937 Desk Set"
-        product1.productImage = "#imageLiteral(resourceName: "phone-fullscreen3")"
-        product1.cellImage = "image-cell3"
+        product3.name = "1937 Desk Set"
+        product3.productImage = "phone-fullscreen3"
+        product3.cellImage = "image-cell3"
         
-        product1.name = "1984 Motorola Phone"
-        product1.productImage = "#imageLiteral(resourceName: "phone-fullscreen4")"
-        product1.cellImage = "image-cell4"
+        product4.name = "1984 Motorola Phone"
+        product4.productImage = "phone-fullscreen4"
+        product4.cellImage = "image-cell4"
         
         
         products = [product1, product2, product3, product4]
-        
-        // Do any additional setup after loading the view.
-        productNameLabel.text = productName
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) ->
@@ -55,14 +52,14 @@ class ProductViewController: UIViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell", for: indexPath)
         
         let product = products?[indexPath.row]
         
         if let p = product {
             cell.textLabel?.text = p.name
             if let i = p.cellImage {
-                cell.imageView?.image = UIImage(named: p.cellImage)
+                cell.imageView?.image = UIImage(named: i)
             }
             
         }

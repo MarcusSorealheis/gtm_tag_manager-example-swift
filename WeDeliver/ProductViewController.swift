@@ -1,6 +1,6 @@
 
 //
-//  ProductsTableViewController.swift
+//  ProductViewController.swift
 //  WeDeliver
 //
 //  Created by Marcus Eagan on 1/16/17.
@@ -9,7 +9,7 @@
 
 import UIKit
 
-class ProductsTableViewController: UITableViewController {
+class ProductViewController: UIViewController {
     
     @IBOutlet weak var productNameLabel: UILabel!
     @IBOutlet weak var productImageView: UIImageView!
@@ -20,11 +20,11 @@ class ProductsTableViewController: UITableViewController {
         super.viewDidLoad()
         
         
-        override func viewDidLoad() {
+        func viewDidLoad() {
             super.viewDidLoad()
             
             if let p = product {
-                productNameLabel.text = p.Name
+                productNameLabel.text = p.name
                 if let i = p.productImage {
                     productImageView.image = UIImage(named: i)
                 }
@@ -32,5 +32,5 @@ class ProductsTableViewController: UITableViewController {
             
             
         }
+    }
 }
-
